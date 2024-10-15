@@ -1,12 +1,12 @@
 <template>
   <div class="login-app">
     <header class="login-header">
-      <div class="container m-top-20">
+      <div class="container">
         <h1 class="logo">
           <RouterLink to="/">小兔鲜</RouterLink>
         </h1>
         <RouterLink class="entry" to="/">
-          进入网站首页 >
+          <p>进入网站首页 >> </p> 
           <i class="iconfont icon-angle-right"></i>
           <i class="iconfont icon-angle-right"></i>
         </RouterLink>
@@ -156,7 +156,9 @@ const doLogin = () => {
     margin-bottom: 38px;
     font-size: 16px;
     color: #333;
-
+    p:hover {
+    color: $xtxColor;
+  }
     i {
       font-size: 14px;
       color: $xtxColor;

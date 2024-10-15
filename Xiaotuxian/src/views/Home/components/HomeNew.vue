@@ -2,10 +2,12 @@
     <home-panel title="新鲜好物" sub-title="新鲜出炉 品质靠谱">
         <ul class="newList">
             <li v-for="item in newList" :key="item.id">
+                <Router-link :to="`/datail/${item.id}`">
                 <img v-img-lazy="item.picture" alt="" width="280px" height="280px"
                 />
                 <p class="name">{{ item.name }}</p>
                 <p class="price" style="color: #C6605F;">￥{{ item.price }}</p>
+                </Router-link>
             </li>
         </ul>
     </home-panel>

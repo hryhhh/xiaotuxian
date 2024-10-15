@@ -21,7 +21,7 @@
         <li><a>会员中心</a></li>
       </template>
       <template v-else>
-        <a @click="$router.push('/login')"> 请先登录</a>
+        <a><Router-link to="/login">请先登录</Router-link></a>
         <a>帮助中心</a>
         <a>关于我们</a>
       </template>
